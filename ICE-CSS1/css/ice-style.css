@@ -1,26 +1,31 @@
 header {
   background-color: yellow;
   text-align: right;
-  box-sizing: border-box;
   width: 100vw;
   height: 5vh;
-  margin: -2.2vh 0;
+  margin: 0;
 }
 
 nav {
   background: green;
-  box-sizing: border-box;
   width: 100vw;
   height:6vh;
-  margin: 0;
+  text-align: center;
 }
 
 nav li {
   display: inline-block;
   background-color: black;
-  height: 6vh;
+  padding: 10px 20px;
   text-align: center;
-  padding: 0 5vh;
+}
+
+h1 {
+  margin:0;
+}
+
+ul{
+  margin:0;
 }
 
 nav a {
@@ -29,16 +34,21 @@ nav a {
 
 
 aside {
-  background-color: white;
+
   background: url("http://www.literarygenius.info/images/william-shakespeare.jpg") no-repeat center;
   float: right;
-  height: 100vh;
+  background-size: 80px;
+  background-color: white;
+  height:500px;
+  /* height: 100vh; */
 
 }
 
+
+
 #content {
   background-color: grey;
-  margin: -21px 0;
+  margin: 0;
 }
 
 #content li {
@@ -52,6 +62,9 @@ nav a:link {
 
 footer {
   background-color: green;
-  height: 10vh;
-  text-align: center;
+  padding: 2vh;
+}
+
+.copyright {
+  margin: 0;
 }
