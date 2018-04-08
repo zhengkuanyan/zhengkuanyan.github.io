@@ -1,0 +1,42 @@
+.resume-container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 80px;
+  border-radius: 5px;
+  box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 30px;
+  padding: 60px;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+h1 {
+  grid-column: 2/4;
+  color: #FC6C4B;
+}
+
+.time-location {
+  grid-column: 1/2;
+  text-align: right;
+  margin-right: 40px;
+}
+
+
+.resume-content {
+  grid-column: 2/4;
+}
+
+
+
+h3 {
+  font-weight: normal;
+}
+
+.work-description {
+  font-size: 14px;
+  line-height: 21px;
+}

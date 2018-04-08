@@ -5,6 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Employment Application Form</title>
 		<link href="CSS/formStyle.css" rel="stylesheet">
+		<style>
+			.anerrormsg {
+				font-family: 'open-sans';
+				font-size: 14px;
+				color: red;
+				display: none;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -19,27 +27,28 @@
       	<!-- Content -->
         <fieldset>
 			<legend>Account Information:</legend>
-			<label> First name:<input type="text" name="fname"   autofocus>
+			<label> First name: *<input type="text" name="fname" required autofocus>
 			</label><br>
 
-		  	<label for="lname"> Last name:</label><input type="text" name="lname"><br>
+		  	<label for="lname"> Last name: *</label><input type="text" name="lname" required><br>
 
-		  	<label> Email: <input type="email" name="email"   placeholder = "iyad@umich.edu"></label><br>
+		  	<label> Email: *<input type="email" name="email" required  placeholder = "iyad@umich.edu"></label><br>
 
-		  	<label> Password: <input type="password" id="password"  name="password1"></label><br>
+		  	<label> Password: *<input type="password" id="password"  name="password1" required></label><br>
 
 		  	<label> Confirm Password: *<input type="password" id="password_repeat"  name="password2" onchange="validatePass(this)"></label><br>
+				<p class="anerrormsg" id="errormsg">Please enter the same password</p>
 		</fieldset><br>
 
 		<fieldset>
 			<legend>Contact Information:</legend>
-			<label>Phone number: <input type="text"></label><br><br>
+			<label>Phone number: <input type="text" class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd"></label><br><br>
 
 		<label>Country of Citizenship: <select id="country" class="bfh-countries" data-country="US"></select><br></label><br>
 
 		<label> Address: <input type="text" id="address" name="address" size="50" placeholder = "1234 N Wells St"></label><br>
 		<label> City: <input type="text" name="city"  placeholder = "Ann Arbor"></label>
-		<label> State: <input type="text" name="state"  placeholder = "MI"></label>
+		<label> State: <select class="form-control bfh-states" data-country="US" data-state="MI" required></select></label>
 		<label> Zip code: <input type="text" name="Zip code"  placeholder = "48108"></label><br>
 		</fieldset><br>
       </div>
@@ -170,16 +179,17 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-formhelpers.min.js"></script>
-		<script>
-function check(input) {
- 	 if (input.value != document.getElementById('password').value) {
- 	 	input.className="error";
- 	 	alert("Must match!!");
-  	}
-	}</script>
-
-
-
-
+		<script type="text/javascript">
+	   function validatePassword(){
+       var x = document.getElementById('password').value;
+			 var y = document.getElementById('password_repeat').value;
+			 var c = document.getElementById('errormsg');
+			 if (x != y) {
+				 c.style.display = 'block';
+			 } else {
+				 c.style.display = 'none';
+			 }
+			 }
+    </script>
 	</body>
 </html>

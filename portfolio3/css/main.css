@@ -1,0 +1,156 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+  font-size: 18px;
+  color: #BBB5C9;
+  font-weight: normal;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-size:cover;
+  color: #ffffff;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.jumbotron, .home {
+  background-image: url('../img/banner.png');
+}
+
+
+p .chineseme {
+  width: 501px;
+  height: 100px;
+  font-family: Roboto;
+  font-size: 100px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #559bff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.intro {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.jumbotron h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 2em;
+  margin: 0;
+  color: #000000;
+}
+
+.project-name {
+    margin-top: 0px;
+    font-family: Roboto, sans-serif;
+    color: #444;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.project-description {
+    margin-top: 0px;
+    font-family: Roboto, sans-serif;
+    color: #8f8f8f;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.jumbotron h3 {
+  font-size: 20px;
+  margin: 0 0 20px;
+  color: #BBB5C9;
+  line-height: 30px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+  margin-top:50px;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}

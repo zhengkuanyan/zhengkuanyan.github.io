@@ -1,0 +1,161 @@
+#opennav {
+  display: none;
+}
+
+#active {
+  color: #ffffff;
+}
+
+#navli-active {
+  color: black;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.logo_zky {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+.navbar {
+  display: inline-block;
+  margin-right: 80px;
+  margin-top: 20px;
+  float: right;
+}
+
+.navli {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 20px
+}
+
+.navli a{
+  font-family: Roboto;
+  font-size:20px;
+  letter-spacing: 0.1em;
+  color:#BBB5C9;
+  text-decoration: none;
+}
+
+.navli a:hover {
+  text-decoration: none;
+  color: #959595;
+}
+
+body {
+  font-family: Roboto;
+  letter-spacing: .09em;
+}
+
+.project-piece {
+  display: inline-block;
+}
+
+/* footer starts here */
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #f8f8f8;
+  margin-top: 50px;
+}
+
+footer .copyright {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.9px;
+  color: #b2babf;
+  padding-top: 45px;
+  padding-bottom: 10px;
+
+}
+
+footer .social {
+  display: table;
+  margin: 0 auto;
+}
+
+footer .social img {
+  padding:0 20px;
+}
+
+footer .social img:hover{
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+
+}
+
+
+
+/* Overlay Background */
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.8);
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    font-family: Roboto;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .navli {
+    display: none;
+  }
+
+  #opennav {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

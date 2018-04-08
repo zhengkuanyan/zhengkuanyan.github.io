@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zhengkuan Yan</title>
+  <meta charset="utf-8" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/resume.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/responsive.css"> -->
+
+</head>
+
+<body>
+
+
+  <header>
+      <div class="logo"><a href="index.html">
+        <img class="logo_zky" src="./img/logo.png" alt="Zhengkuan Yan"></a>
+      </div>
+
+      <div class="navbar">
+        <div class="navli"><a href="index.html">Works</a></div>
+        <div class="navli"><a href="fun.html">Fun</a></div>
+        <div class="navli"><a href="about.html">About</a></div>
+        <div class="navli"><a href="resume.html" id="navli-active">Resume</a></div>
+        <div class="navli" id="opennav"><a href="javascript:void(0)" onclick="openNav()">Menu</a></div>
+      </div>
+    </header>
+
+    <section class="resume-container">
+      <div class="resume-grid">
+        <h1>EDUCATION</h1>
+        <div class="time-location">
+          <p class="time">May 2019</p>
+          <p class="location">Ann Arbor, MI</p>
+        </div>
+        <div class="resume-content">
+          <h2>Master of Science in Information</h2>
+          <h3>University of Michigan</h3>
+        </div>
+
+        <div class="time-location">
+          <p class="time">Jul 2017</p>
+          <p class="location">Beijing, China</p>
+        </div>
+        <div class="resume-content">
+          <h2>Bachelor of Arts in Advertising</h2>
+          <h3>Peking University</h3>
+        </div>
+
+        <h1>EXPERIENCE</h1>
+        <div class="time-location">
+          <p class="time">Jan. 2018 - Present</p>
+          <p class="location">Ann Arbor, MI</p>
+        </div>
+        <div class="resume-content">
+          <h2>Designer</h2>
+          <h3>Verizon | UMSI Design Clinic</h3>
+          <p class="work-description">
+            Collaborating with a team of 5 people to conduct research on unmet user needs regarding team affinity to grow audiences on existing sports platforms.
+          </p>
+        </div>
+
+        <div class="time-location">
+          <p class="time">Jun. 2017 - Sep. 2017</p>
+          <p class="location">Beijing, China</p>
+        </div>
+        <div class="resume-content">
+          <h2>UX Designer</h2>
+          <h3>ChineseMe</h3>
+          <p class="work-description">
+            Designed user flows and created a prototype for the MVP of an online Chinese course website, conducted usability testing with 6 users, and designed the final user interface.
+          </p>
+        </div>
+
+        <div class="time-location">
+          <p class="time">Oct. 2015 - Jun. 2017</p>
+          <p class="location">Beijing, China</p>
+        </div>
+        <div class="resume-content">
+          <h2>UX Designer</h2>
+          <h3>Peking University Youth Research Center</h3>
+          <p class="work-description">
+            Collaborated with PM, front-end developers and another designer on development for a redesigned
+            website of PKUBBS (the official online forum of Peking University) and its mobile app.
+          </p>
+        </div>
+
+        <div class="time-location">
+          <p class="time">Dec. 2015 - Feb. 2016</p>
+          <p class="location">Beijing, China</p>
+        </div>
+        <div class="resume-content">
+          <h2>UX Designer</h2>
+          <h3>Seiue</h3>
+          <p class="work-description">
+            Designed a web-based classroom reservation system for the Affiliated High School of Peking University.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>© 2017 Zhengkuan Yan All Rights Reserved.</p>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100009435830167"><img src="./img/icon-fb.svg" alt="iconfb"></a>
+        <a href="https://twitter.com/Zhengkuan_Yan"><img src="./img/icon-twitter.svg" alt="icontwitter"></a>
+        <a href="https://www.instagram.com/zhengkuan_yan/"><img src="./img/icon-ins.svg" alt="iconins"></a>
+      </div>
+    </footer>
+
+    <div id="myNav" class="overlay">
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <div class="overlay-content">
+        <a href="index.html" id="active">Works</a>
+        <a href="fun.html">Fun</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+    /* Open */
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+
+  </body>
+</html>

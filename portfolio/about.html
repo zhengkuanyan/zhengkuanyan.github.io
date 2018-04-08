@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/about.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/responsive.css"> -->
+  </head>
+
+  <body>
+    <header>
+        <div class="logo"><a href="index.html">
+          <img class="logo_zky" src="./img/logo.png" alt="Zhengkuan Yan"></a>
+        </div>
+
+        <div class="navbar">
+          <div class="navli"><a href="index.html">Works</a></div>
+          <div class="navli"><a href="fun.html">Fun</a></div>
+          <div class="navli"><a href="about.html" id="navli-active">About</a></div>
+          <div class="navli"><a href="resume.html">Resume</a></div>
+        </div>
+    </header>
+
+    <div class="headshot">
+      <img src="./img/about/headshot.png" alt="headshot">
+    </div>
+
+    <div class="buttom">
+      <a href="mailto:zhengkuanyan@gmail.com" class="drop-me-a-line"><p>Drop me a line</p></a>
+    </div>
+
+    <div class="introduction">
+      <p>Hello, I am <b>Zhengkuan Yan</b>, a graduate student currently studying at the University of Michigan, specializing in Human-Computer Interaction. In July 2017, I completed my bachelor degree in Advertising at Peking University in Beijing. During my college years, I was lucky to work with talented people on multiple design projects, and I developed my interest in user experience design. And now I am pursuing a more systematic study on this subject in one of the best HCI programs in the world. I love <b>interaction design</b> and <b>visual design</b> and are always dedicated to crafting useful and beautiful experience.
+      </p>
+    </div>
+
+  <footer>
+    <div class="copyright">
+      <p>© 2017 Zhengkuan Yan All Rights Reserved.</p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=100009435830167"><img src="./img/icon-fb.svg" alt="iconfb"></a>
+      <a href="https://twitter.com/Zhengkuan_Yan"><img src="./img/icon-twitter.svg" alt="icontwitter"></a>
+      <a href="https://www.instagram.com/zhengkuan_yan/"><img src="./img/icon-ins.svg" alt="iconins"></a>
+    </div>
+  </footer>
+
+  <div id="myNav" class="overlay">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <div class="overlay-content">
+      <a href="index.html" id="active">Works</a>
+      <a href="fun.html">Fun</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+  /* Open */
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    /* Close */
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+
+</body>
+</html>

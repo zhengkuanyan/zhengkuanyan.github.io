@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zhengkuan Yan</title>
+  <meta charset="utf-8" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/home.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/responsive.css"> -->
+
+</head>
+
+<body>
+
+
+
+  <header>
+      <div class="logo"><a href="index.html">
+        <img class="logo_zky" src="./img/logo.png" alt="Zhengkuan Yan"></a>
+      </div>
+
+      <div class="navbar">
+        <div class="navli"><a href="index.html" id="navli-work">Works</a></div>
+        <div class="navli"><a href="fun.html">Fun</a></div>
+        <div class="navli"><a href="about.html">About</a></div>
+        <div class="navli"><a href="resume.html">Resume</a></div>
+        <div class="navli" id="opennav"><a href="javascript:void(0)" onclick="openNav()">Menu</a></div>
+      </div>
+    </header>
+
+  <div class="banner">
+    <div class="text-block">
+      <div class="title">
+        <p>Hi, I'm Zhengkuan Yan</p>
+      </div>
+      <div class="description">
+        <p>I'm passionate about design, and dedicated to bringing fun, convenience and novelty through my work.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="container">
+    <div class="project-grid">
+      <div class="project1">
+        <a href="chineseme.html"><img src="./img/work-chineseme.png" alt="chineseme"></a>
+        <p class="project-name">ChineseMe</p>
+        <p class="project-description">Chinese Online Learning Website Design</p>
+      </div>
+      <div class="project2">
+        <a href="kayo.html"><img src="./img/work-kayo.png" alt="kayo"></a>
+        <p class="project-name">KA-YO</p>
+        <p class="project-description">iPad-based Karaoke Operating System Design</p>
+      </div>
+      <div class="project3">
+        <a href="pkubbs.html"><img src="./img/work-pkubbs.png" alt="pkubbs"></a>
+        <p class="project-name">PKU BBS</p>
+        <p class="project-description">University Online Forum Website Redesign</p>
+      </div>
+      <div class="project4">
+        <a href="graphic.html"><img src="./img/work-graphic.png" alt="graphic"></a>
+        <p class="project-name">Graphic Design</p>
+        <p class="project-description">My Favorite Graphic Design Pieces</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="copyright">
+      <p>© 2017 Zhengkuan Yan All Rights Reserved.</p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=100009435830167"><img src="./img/icon-fb.svg" alt="iconfb"></a>
+      <a href="https://twitter.com/Zhengkuan_Yan"><img src="./img/icon-twitter.svg" alt="icontwitter"></a>
+      <a href="https://www.instagram.com/zhengkuan_yan/"><img src="./img/icon-ins.svg" alt="iconins"></a>
+    </div>
+  </footer>
+
+  <div id="myNav" class="overlay">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <div class="overlay-content">
+      <a href="index.html" id="active">Works</a>
+      <a href="fun.html">Fun</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+  /* Open */
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    /* Close */
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+</body>
+</html>

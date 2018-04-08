@@ -1,0 +1,54 @@
+.headshot {
+  display: table;
+  margin: 50px auto;
+  background-image: url("../img/banner.png");
+}
+
+.headshot img {
+  width: 160px;
+}
+
+
+.buttom {
+  width: 203px;
+  height: 40px;
+  border-radius: 57px;
+  background-color: #ffffff;
+  border: solid 1px #cdd6db;
+  margin: 10px auto;
+}
+
+.buttom:hover {
+  border: solid 1px #FC6C4B;
+  transition: 0.5s;
+}
+
+.drop-me-a-line {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 40px;
+  text-align: center;
+  color: #b2babf;
+}
+
+.drop-me-a-line:hover{
+    color: #FC6C4B;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+
+
+.introduction {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.8em;
+  letter-spacing: .09em;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 30px;
+  margin: 50px 20%;
+}

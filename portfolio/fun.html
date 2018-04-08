@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zhengkuan Yan</title>
+  <meta charset="utf-8" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/work.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/fun.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="./css/responsive.css"> -->
+
+</head>
+
+<body>
+
+    <header>
+      <div class="logo"><a href="index.html">
+        <img class="logo_zky" src="./img/logo.png" alt="Zhengkuan Yan"></a>
+      </div>
+
+      <div class="navbar">
+        <div class="navli"><a href="index.html">Works</a></div>
+        <div class="navli"><a href="fun.html" id="navli-active">Fun</a></div>
+        <div class="navli"><a href="about.html">About</a></div>
+        <div class="navli"><a href="resume.html">Resume</a></div>
+        <div class="navli" id="opennav"><a href="javascript:void(0)" onclick="openNav()">Menu</a></div>
+      </div>
+    </header>
+
+    <section class="photo-content">
+      <p class="overview-text">
+        When I am not at work or school, I love to travel to fun places and take
+        photos of beautiful views and fun moments of my friends. Here are some of my favorite photos pulled from my Instagram.
+      </p>
+
+      <div class="photo-container">
+        <div class="photo-grid">
+          <div class="photo">
+            <img src="./img/fun/1.jpg" alt="1">
+            <p class="photo-name">Seattle</p>
+            <p class="photo-time">March 2018</p>
+          </div>
+          <div class="photo">
+            <img src="./img/fun/2.jpg" alt="2">
+            <p class="photo-name">Thailand</p>
+            <p class="photo-time">Jun 2017</p>
+          </div>
+          <div class="photo">
+            <img src="./img/fun/3.jpg" alt="3">
+            <p class="photo-name">Thailand</p>
+            <p class="photo-time">Jun 2017</p>
+          </div>
+          <div class="photo">
+            <img src="./img/fun/4.jpg" alt="4">
+            <p class="photo-name">New York</p>
+            <p class="photo-time">Dec 2017</p>
+          </div>
+          <div class="photo">
+            <img src="./img/fun/5.jpg" alt="5">
+            <p class="photo-name">Los Angeles</p>
+            <p class="photo-time">Mar 2018</p>
+          </div>
+          <div class="photo">
+            <img src="./img/fun/6.jpg" alt="6">
+            <p class="photo-name">Los Angeles</p>
+            <p class="photo-time">Mar 2018</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>© 2017 Zhengkuan Yan All Rights Reserved.</p>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100009435830167"><img src="./img/icon-fb.svg" alt="iconfb"></a>
+        <a href="https://twitter.com/Zhengkuan_Yan"><img src="./img/icon-twitter.svg" alt="icontwitter"></a>
+        <a href="https://www.instagram.com/zhengkuan_yan/"><img src="./img/icon-ins.svg" alt="iconins"></a>
+      </div>
+    </footer>
+
+    <div id="myNav" class="overlay">
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <div class="overlay-content">
+        <a href="index.html" id="active">Works</a>
+        <a href="fun.html">Fun</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+    /* Open */
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+
+  </body>
+</html>
