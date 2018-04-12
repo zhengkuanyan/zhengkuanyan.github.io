@@ -4,16 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Challenge 3</title>
     <script type="text/javascript">
-    function checkForm(){
+		function checkForm(){
     	// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
 
-					s=document.getElementById('opt-straw').checked;
-					b=document.getElementById("opt-blue").checked;
-					if (s||b)
-						return true;
-					else
-						return false;
-			}
+      var straw = document.getElementById('opt-straw');
+      var blue = document.getElementById('opt-blue');
+      if ((straw.checked == false) & (blue.checked == false)) {
+        alert('Please select your favorite berries!');
+				return false
+      }
+
 		}
     </script>
 </head>
