@@ -37,8 +37,30 @@
 	</style>
 
 	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at: 
+	// I used Two functions here.  Starter idea at:
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
+	function changeContent(img){
+    var alttext = img.alt;
+    var all = document.getElementById('image')
+    all.innerHTML = alttext
+
+    var imgsrc = img.src
+    all.style.backgroundImage = 'url(' + imgsrc + ')';
+
+  }
+
+  function removeContent(img){
+		var all = document.getElementById('image')
+		all.innerHTML = imageMessage;
+		all.style.backgroundImage = '';
+  }
+
+	var imageMessage;
+	function saveMessage() {
+		var all = document.getElementById('image');
+		imageMessage = all.innerHTML;
+	}
+
 	</script>
 </head>
 
@@ -49,21 +71,26 @@
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" 
-			alt = "Styling with a Bandana" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
+		<img class = "preview"
+			alt = "Styling with a Bandana"
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg"
+			onmouseover='changeContent(this)' onfocus = 'changeContent(this)'
+			onmouseleave='removeContent(this)' onblur = 'removeContent(this)';
 			>
 
 
-		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
-		<img class = "preview" 
-			alt = "With My Boy" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
-	
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" tabindex = "1" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
-			alt = "Young Puppy";>
+		<img class = "preview"
+			alt = "With My Boy"
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
+			onmouseover='changeContent(this)' onfocus = 'changeContent(this)'
+			onmouseleave='removeContent(this)' onblur = 'removeContent(this)';>
+
+		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+		<img class = "preview" tabindex = "1"
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
+			alt = "Young Puppy"
+			onmouseover='changeContent(this)' onfocus = 'changeContent(this)'
+			onmouseleave='removeContent(this)' onblur = 'removeContent(this)';>
 </body>
 </html>
-	

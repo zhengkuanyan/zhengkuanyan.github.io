@@ -234,4 +234,9 @@ section img {
   .body-text {
     margin-left: 0;
   }
+
+  .photo {
+    display: block;
+    width: 100%;
+  }
 }

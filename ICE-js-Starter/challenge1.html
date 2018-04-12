@@ -23,8 +23,15 @@ When you test your form at the moment, you'll notice that you can click on the c
 
     <script type="text/javascript">
 	function toggleEmail(){
-	document.getElementById('emailfield').style.display='block'
-
+    var y=document.getElementById('subscribe').checked;
+      if (y==true){
+        var x=document.getElementById('emailfield')
+        x.style.display='block';
+      }
+      else{
+        var x=document.getElementById('emailfield')
+        x.style.display='none';
+      }
 	}
     </script>
   </head>
