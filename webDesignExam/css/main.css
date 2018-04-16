@@ -1,0 +1,16 @@
+.container {
+  white-space: nowrap;
+}
+
+img {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 5px solid blue;
+  padding: 5%;
+  width: 50%;
+  white-space: normal;
+}
+
+body {
+  background-image: url("../images/sun-pattern.png");
+}

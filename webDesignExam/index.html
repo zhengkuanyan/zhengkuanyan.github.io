@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Exam2</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#hide').on('click', function(){
+          $('#people').hide();
+          $('#logo').css({
+            "display": "block",
+            "margin-left": "auto",
+            "margin-right": "auto"
+          });
+        });
+
+        $('#show').on('click', function(){
+          $('#people').show();
+          $('#logo').css({
+            "display": "inline-block",
+            "margin-left": "0",
+            "margin-right": "0"
+          });
+        });
+      });
+
+    </script>
+  </head>
+
+  <body>
+    <h1>Zhengkuan Yan</h1>
+    <div class="container">
+      <img id="people" src="./images/examPic.JPG" alt="three people"><img id="logo" src="./images/UMSI-logo.jpg" alt="UMSI-logo">
+    </div>
+    <button id="hide" type="button">Hide Image</button>
+    <button id="show" type="button">Show Image</button>
+  </body>
+
+
+
+</html>
